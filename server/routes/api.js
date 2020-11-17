@@ -5,7 +5,6 @@ const mongoose = require('mongoose')
 const router = express.Router()
 
 const User = require('../models/user')
-const Events = require('../models/events')
 
 const db = "mongodb://localhost:27017/eventsb"
 
@@ -86,7 +85,7 @@ router.post('/login', (req, res) => {
 
 
 
-/*begininng events 
+//begininng events 
 router.get('/events', (req, res) => {
     // hard coded for display eventsarray 
     let events = [
@@ -114,7 +113,7 @@ router.get('/events', (req, res) => {
     ]
     res.json(events)
 })
-*/
+
 
 
 
